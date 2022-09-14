@@ -1,0 +1,489 @@
+
+
+<html lang="">
+
+<!-- Mirrored from bnbfarm.io/liquidity.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Jun 2022 16:33:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" type="image/x-icon" ,="" href="img/favicon.png">
+    <title>BNB Farm</title>
+    <link href="css/app.ea68f3d6.css" rel="preload" as="style">
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/notyf%403/notyf.min.css">
+    <link href="css/app.ea68f3d6.css" rel="stylesheet">
+    <script src="../cdnjs.cloudflare.com/ajax/libs/web3/1.3.5/web3.min.js" integrity="sha512-S/O+gH5szs/+/dUylm15Jp/JZJsIoWlpSVMwT6yAS4Rh7kazaRUxSzFBwnqE2/jBphcr7xovTQJaopiEZAzi+A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="../unpkg.com/axios%400.27.2/dist/axios.min.js"></script>
+	<script>
+	    let ref = null;
+	    console.log(ref);
+        localStorage.setItem('referrer',ref);
+	</script>
+</head>
+<body data-new-gr-c-s-check-loaded="8.873.0" data-gr-ext-installed="">
+    <div id="blockPageOverlay"></div>
+	<noscript>
+		<strong>We're sorry but BNB Farm.org doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+	</noscript>
+	<div id="app">
+		<div class="push">
+			
+		</div><!---->
+		<div class="app">
+			<div class="links-main">
+				<div class="container-link">
+					<div><a href="https://www.facebook.com/BNB-FARM-104493231917629/" target="_blank"><span class="facebook"></span></a>
+					</div>
+					<div><a href="https://t.me/bnbfarm" target="_blank"><span class="telegram"></span></a>
+					</div>
+					<div><a href="https://twitter.com/bnbfarm_io/" target="_blank"><span class="twitter"></span></a>
+					</div>
+					</div>
+				</div>
+				
+				<header>
+					<div class="cabinet-header">
+						<div class="wrapper-logo">
+							<a href="index.html"><div class="logo white router-link-active">
+								
+							</div></a>
+							<button class="connect deskConnect">
+								<span class="icon icon-connect"></span>
+								<span>Join</span>
+							</button>
+						</div>
+						<div class="container"></div>
+						<div class="wrapper-button">
+						    <button class="btn btn-staking router-link-exact-active active active">
+						        <span>
+						            TVL:&nbsp;
+						        </span>
+						        <span class="contractBalance">
+						            0.00
+						        </span>
+						        <span>
+						            &nbsp;BNB
+						        </span>
+						    </button>
+						    <button class="btn full btn-makeDeposit"><span>Deposit</span></button>
+						    <div>
+						    
+							<a href="stats.html" aria-current="page" class="btn btn-staking router-link-exact-active active active">
+								<span class="icon icon-staking"></span>
+								<span>Dashboard</span>
+							</a>
+						</div><!---->
+					</div>
+				</div>
+			</header>
+
+
+			
+			
+
+			<main data-v-46ab4e29="" class="cabinet">
+				<section>
+					<div class="container">
+						<div class="select-page-container">
+							<ul class="select-page-cabinet select-list">
+								<li class="option-page-cabinet">
+									<a href="stats.html">
+										<span class="icon icon-statistics"></span>
+										<span>BNB farming</span>
+									</a>
+								</li>
+								<li class="option-page-cabinet router-link-exact-active active">
+									<a href="liquidity.html" aria-current="page">
+										<span class="icon icon-liquidity"></span>
+										<span>Create liquidity</span>
+									</a>
+								</li>
+								<li class="option-page-cabinet">
+									<a href="staking.html">
+										<span class="icon icon-staking"></span>
+										<span>BNF staking</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="cards-wrapper cabinet-page-liquidity">
+							<div class="card select-block flex-column">
+								<ul class="select-list select-block-cabinet">
+									<li class="remove-liq">
+										<a class="">
+											<span>Remove</span>
+										</a>
+									</li>
+									<li class="add-liq active">
+										<a>
+											<span>Add</span>
+										</a>
+									</li>
+								</ul>
+								<div class="select-block-content flex-column add-liq-tab" >
+									<div class="container-input-amount">
+										<div class="input-header">
+											<div class="input-title"></div>
+											<button class="value"><span class="userBnbBalance">0.00</span>&nbsp;BNB</button>
+										</div>
+										<div class="input-wrapper">
+											<input id="bnbInput" type="number" autocomplete="off" placeholder="0" class="currency-input" step="any" required>
+											<div class="coin-container">
+												<div class="icon logo-coin bnb logo-bnb">
+												    
+												</div>
+												<span>BNB</span>
+											</div>
+										</div>
+									</div>
+									<button class="container-button-add">
+										<div class="icon icon-plus">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g opacity="0.16">
+													<path d="M16.6673 9.99935H3.33398" stroke="white" stroke-linecap="round"></path>
+													<path d="M9.99935 3.33398V16.6673" stroke="white" stroke-linecap="round"></path>
+												</g>
+											</svg>
+										</div>
+									</button>
+									<div class="container-input-amount">
+										<div class="input-header">
+											<div class="input-title"></div>
+											<button class="value"><span class="bnfTokenBalance">0.00</span>&nbsp;BNF</button>
+										</div>
+										<div class="input-wrapper">
+											<input id="bnfInput" type="number" autocomplete="off" placeholder="0" class="currency-input" step="any" required>
+											<div class="coin-container">
+												<div class="icon logo-coin BNF"></div>
+												<span>BNF</span>
+											</div>
+										</div>
+									</div>
+									<div class="table-block">
+										<div class="tr">
+											<div class="td">Pool share</div>
+											<div class="td mark"><span class="possiblePoolShare">0.00</span>%</div>
+										</div>
+									</div>
+									<div class="button-container">
+										<button class="btn btn-yellow-full" id="addLiquidityBtn">Confirm</button>
+									</div>
+									
+								</div>
+								
+								<!-------------------------remove liquidity-------------------------->
+								
+								<div class="select-block-content flex-column remove-liq-tab" style="display:none">
+                                    <div class="container-input-amount ">
+                                        <div class="input-header">
+                                            <div class="input-title"></div>
+                                            <button class="value"><span class="bnflpTokenBalance">0.00</span>BNF-LP</button>
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <input id="removeLiquidityInput" type="number" autocomplete="off" placeholder="0" class="" step="any" required>
+                                            <div class="coin-container">
+                                                <div class="icon logo-coin logo-lpcoin pnx-lp"></div>
+                                                <span>BNF-LP</span>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="container-button-amount removeLiqPercBtns">
+                                        <button type="button" value="25" class="btn twenty_five_perc" onclick="calcLiqInputPerc(this)">25%</button>
+                                        <button type="button" value="50" class="btn fifty_perc" onclick="calcLiqInputPerc(this)">50%</button>
+                                        <button type="button" value="75" class="btn seventy_five_perc" onclick="calcLiqInputPerc(this)">75%</button>
+                                        <button type="button" value="100" class="btn cent_perc" onclick="calcLiqInputPerc(this)">100%</button>
+                                    </div>
+                                    <div class="button-container">
+                                        <button class="btn btn-yellow-full" id="removeLiquidityBtn">Remove liquidity</button>
+                                    </div>
+                                    <a href="https://pancakeswap.finance/" target="_blank" class="go-to link-green">Go to PancakeSwap</a>
+                                </div>
+
+								
+								
+							</div>
+							<div>
+								<div class="container-add-info">
+									<div class="card flex-row">
+										<div>Overall liquidity</div>
+										<div class="bold">$<span class="totalLiquidityUsd">00.00</span></div>
+										<!--<div class="bold">$10203.30</div>-->
+									</div>
+									<div class="card flex-row">
+										<div class="icon logo-coin BNF"></div>
+										<div> 1 BNF= <span class="bold bnfPrice">0.0000 USD</span>
+										</div>
+									</div>
+									<div class="card flex-row">
+										<div class="icon logo-coin BNF"></div>
+										<div> Price change = <span class="bold bnfPriceChange">+00.00 %</span></div>
+									</div>
+								</div>
+								<div class="card card-bg">
+									<div class="card-header">
+										<h4>My LP tokens</h4>
+										<div class="block-title-button">
+											<div class="flex-row">
+												<div class="icon logo-coin logo-lpcoin bnx-lp-big">
+												    
+												</div>
+												<h2 class = "bnflpTokenBalance">0.00 </h2> &nbsp;<span class="nearly lpInUsd">≈ $0.00</span>
+											</div>
+											<div class="container-button ">
+												<button class="btn btn-yellow-border" onclick="addBnfLpToWallet()"> Add BNF-LP</button>
+											</div>
+										</div>
+									</div>
+									<div class="card-header">
+										<div class="table-block">
+											<div class="tr">
+												<div class="td">Staked Tokens </div>
+												<div class="td mark"><span class="stakedAmount">0.00</span>BNF-LP</div>
+											</div>
+											<div class="tr">
+												<div class="td">BNF-LP tokens</div>
+												<div class="td mark"><span class="bnflpTokenBalance">0.00</span>BNF-LP</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-header">
+										<div class=" block-adresses flex-row">
+											<div class="flex-column">
+												<h4> BNF-LP Address </h4>
+												<button class="flex-row" onclick="newCopyToClipboard(liquidityContractAddress)" style="margin:2px !important">
+												    
+									                <a class="go-to link-green pairAddress" target="blank"></a>
+										            <span class="icon-copy"></span>
+										        </button>
+											</div>
+											<div class="flex-column">
+												<h4> Pair address </h4>
+												<button>
+													<a id="pairAddress" class="go-to link-green pairAddress" target="blank"></a>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="subcard block-attention">
+										<div class="icon">
+											<div class="icon-attention">
+												
+											</div>
+										</div>
+										<h4> Liquidity is created on the PancakeSwap exchange and can be removed at any time. </h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+			<footer class="cabinet-footer">
+				<div class="screen">
+					<div class="container">
+						<div class="main-title">
+							<h2>Secure smartcontract on the Binance blockchain</h2>
+							<div class="buttons-container">
+								<button class="btn full">
+									<span>Make a deposit</span>
+									<svg width="18" height="18" viewBox="0 0 18 18">
+										<path d="M4.41003 3.09L10.32 9L4.41003 14.91L6.00003 16.5L13.5 9L6.00003 1.5L4.41003 3.09Z"></path>
+									</svg>
+								</button>
+								<button class="btn border">Verified contract</button>
+							</div>
+						</div>
+						<div class="navigation">
+							<div class="logo dark router-link-active"></div>
+						</div>
+						<div class="rights">
+							<div class="copyright">Copyright © 2021 BNB Farm. All rights reserved.</div>
+							<div class="privacy">Privacy policy</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+		</main>
+		</div>
+		<div class="mobile-menu-button">
+			<button class="close"></button>
+			<button class="open active"></button>
+		</div><!---->
+		<div class="mobile-menu menu-control" style="display:none">
+			<div class="mobile-menu-header">
+				<div>
+					<div class="wrapper-logo">
+						<div class="logo white router-link-exact-active router-link-active">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-menu-container">
+				<div class="container">
+					<ul class="menu-list">
+						<li>
+						    <a href="stats.html">BNB Farming</a>
+							
+						</li>
+						<li>
+						    <a href="liquidity.html">Create Liquidity</a>
+							
+						</li>
+						<li>
+							<a href="staking.html">BNF Staking</a>
+						</li>
+					</ul>
+					<div class="buttons-container-menu">
+					    <button class="connect"><span class="icon icon-connect"></span><span id="join">Join</span></button>
+				    
+						<div class="wrapper-button">
+						    <button class="btn btn-staking btn-makeDeposit"><span>Deposit</span></button>
+							<div>
+								<a href="stats.html" class="btn btn-staking">
+									<i class="icon-staking-header"></i>
+									<span>Dashboard</span>
+								</a>
+							</div>
+						</div>
+						<button class="btn btn-staking router-link-exact-active active active">
+						        <span>
+						            TVL:&nbsp;
+						        </span>
+						        <span class="contractBalance">
+						            0.00
+						        </span>
+						        <span>
+						            &nbsp;BNB
+						        </span>
+						</button>
+					</div>
+					<div class="block-menu-mobile ">
+						<h4> Social networks </h4> 
+						<div class="container-link">
+							<div>
+								<a href="https://twitter.com/bnbfarm_io/" target="_blank">
+									<span class="twitter"></span>
+								</a>
+							</div>
+							<div>
+								<a href="https://www.facebook.com/BNB-FARM-104493231917629/" target="_blank">
+									<span class="facebook"></span>
+								</a>
+							</div>
+							<div>
+								<a href="https://t.me/bnbfarm" target="_blank">
+									<span class="telegram"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!---->
+	
+	<div class="modal-container" id="refStatsModal" style="display:none">
+	    <div class="modal-wrapper">
+	        <div class = "modal-header">
+	            Referral Earnings:
+	            <span class="referralEarnings">0.00</span>BNB
+	            <button class="modal-close">
+				    <i class="close-icon"></i>
+			    </button>
+	        </div>
+	        <div class="modal-content">
+	            <div class="table-block">
+	                <div class="tr">
+	                    <div class="td mark level1">1st Level: <span id="level1">0</span></div>
+	                    <div class="td mark level5">5th Level: <span id="level5">0</span></div>
+	                </div>
+	                <div class="tr">
+	                    <div class="td mark level2">2nd Level: <span id="level2">0</span></div>
+	                    <div class="td mark level6">6th Level: <span id="level6">0</span></div>
+	                </div>
+	                <div class="tr">
+	                    <div class="td mark level3">3rd Level: <span id="level3">0</span></div>
+	                    <div class="td mark level7">7th Level: <span id="level7">0</span></div>
+	                </div>
+	                <div class="tr">
+	                    <div class="td mark level4">4th Level: <span id="level4">0</span></div>
+	                    <div class="td mark level8">8th Level: <span id="level8">0</span></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div class="modal-container" id="depositPopup" style="display:none">
+	<div class="modal-wrapper">
+		<div class="modal-header">
+			<span>Make new deposit</span>
+			<button class="modal-close">
+				<i class="close-icon"></i>
+			</button>
+		</div>
+		<div class="modal-content">
+			<div class="input-header">
+				<div>Enter the BNB deposit amount(minimum 0.05 BNB):</div>
+				<button class="value"><span class="userBnbBalance">0.00</span>&nbsp;BNB</button>
+			</div>
+			<input id="currencyInput" type="number" placeholder="0.1" min="0.05" autocomplete="off" class="input enter-amount" value="0.1">
+			<button class="btn btn-yellow-full button-modal-main deposit-btn"> Make a deposit</button>
+			<div class="card-header">
+				<div class="flex-row">
+					<div class="icon ">
+						<i class="icon-upline"></i>
+					</div>
+					<span> Your sponsor's wallet: <span class="green" id="upline">No upline</span></span>
+				</div>
+			</div>
+			<div class="card flex-row">
+				<div class="icon ">
+					<i class="icon-attention"></i>
+				</div>
+				<h4><span class="bold">IMPORTANT </span>Don't forget about the blockchain network fees! You must have approximately 0.01 BNB in your wallet to pay for transactions.</h4>
+			</div>
+			<ul class="check">
+				<li>Minimum deposit amount 0.05 BNB. There is no maximum limit</li>
+				<li>We work only with BNB</li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+	
+	<div class="modal-container" style="display: none;">
+		<div class="modal-wrapper">
+			<div class="modal-header">
+				<span>Messages</span>
+				<button class="modal-close">
+					<div class="close-icon"></div>
+				</button></div>
+				<!--<div class="modal-content"></div>-->
+
+				<div class="modal-content"><div class="select-wallet-wrapper flex-column"><button class="btn-option flex-row card"><span>Metamask</span><span class="icon metamask"></span></button><button class="btn-option flex-row card active"><span>Binance Chain</span><span class="icon binance"></span></button></div><a class="question-wrapper"><span class="icon icon-question"></span><span>How to connect your wallet</span></a></div>
+			</div>
+		</div>
+	</div>
+	
+    <script src="../cdn.jsdelivr.net/npm/notyf%403/notyf.min.js"></script>
+	<script src="../unpkg.com/axios%400.27.2/dist/axios.min.js"></script>
+
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/oldContractAbi.js"></script>
+	<script src="js/contractabi8510.js?v=0.2"></script>
+	<script src="js/liquidityContractAbi8510.js?v=0.2"></script>
+	<script src="js/routerContractAbi8510.js?v=0.2"></script>
+	<script src="js/tokenContractAbi8510.js?v=0.2"></script>
+	<!--<script src="js/test.js"></script>-->
+	<script src="js/customcore8510.js?v=0.2"></script>
+	<!--<script src="js/test.js"></script>-->
+</body>
+
+<!-- Mirrored from bnbfarm.io/liquidity.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Jun 2022 16:33:30 GMT -->
+</html>
